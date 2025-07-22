@@ -1,14 +1,13 @@
-
-import React from 'react'
-import { Appbar } from '@/components/Appbar'
+import AppBar from "@/components/Layout/Appbar";
+import MainSection from "@/components/sections/MainSection";
+import BackgroundDots from "@/components/ui/BackgroundDots";
 
 export default function Home() {
   return (
-    <>
-      <Appbar />
-      <div className="p-6">
-        Hello to my portfolioooo
-      </div>
-    </>
-  )
+    <div className="relative min-h-screen bg-gradient-to-br from-purple-900 via-purple-800 to-slate-900">
+      <BackgroundDots />
+      <AppBar />
+      <MainSection />
+    </div>
+  );
 }
